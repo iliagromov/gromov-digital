@@ -1,1 +1,21 @@
+@import '../../../styles/_imports'
 
+.header
+
+    &-inner
+        align-items: center
+        justify-content: space-between
+        padding: 30px 20px
+        border-radius: 15px
+        backdrop-filter: blur(14px)
+        background: rgba(49, 49, 49, 0.22)
+
+    &__action
+        display: flex
+        align-items: flex-start
+
+    .btn
+        display: none
+        +sm-block
+            display: inline-block
+            margin-left: 20px

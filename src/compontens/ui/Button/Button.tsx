@@ -3,7 +3,14 @@ import React, { FC } from "react";
 // import { ReactSVG } from 'react-svg';
 // import { useStaticQuery, graphql, Link, navigate } from "gatsby";
 
-const Footer: FC = () => {
+import "./Button.sass";
+
+type ButtonProps = {
+  children?: string;
+  handleClick?: () => void;
+};
+
+const Button: FC<ButtonProps> = ({ children, handleClick }) => {
   //   const {
   //     mainSlogan
   //   } = useStaticQuery(graphql`
@@ -14,12 +21,11 @@ const Footer: FC = () => {
   //       }
   //     }`);
   return (
-    <footer className="footer">
-      <div className="wrapper">
-        <div className="footer-inner"></div>
-      </div>
-    </footer>
+    <button className="btn" onClick={handleClick}>
+      {" "}
+      {children}
+    </button>
   );
 };
 
-export { Footer };
+export { Button };

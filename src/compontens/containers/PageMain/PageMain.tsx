@@ -1,7 +1,8 @@
 import * as React from "react";
-import { Link, PageProps, useStaticQuery } from "gatsby";
+import { PageProps } from "gatsby";
+import { Banner } from "../../common/Banner/Banner";
 
 const PageMainContainer: React.FC<PageProps> = (props) => {
-  return <>PageMainContainer</>;
+  return <Banner />;
 };
 export { PageMainContainer };

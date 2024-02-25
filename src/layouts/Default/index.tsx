@@ -7,6 +7,7 @@ import { Footer } from "./Footer/Footer";
 
 // import { ThemeToggler } from "gatsby-plugin-dark-mode";
 import Helmet from "react-helmet";
+import { DebugGridComponent } from "./DebugGrid/DebugGrid";
 
 // import { YMInitializer } from "react-yandex-metrika";
 
@@ -57,6 +58,7 @@ const Layout: FC<LayoutProps> = ({
   }];`,
         }}
       ></Script> */}
+      <DebugGridComponent isVisible={true} />
       <div className={cn("page-body", [classNamesBody])}>
         {/* <Helmet>
           <script src="https://qtickets.ru/js/openapi" />

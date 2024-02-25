@@ -9,11 +9,14 @@
 
 // $fallback-fonts: Helvetica Neue,helvetica,arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic;
 
-// .wrapper
-//   +wrapper()
-
 @font-face
   +font(Montserrat, Regular, 400)
+
+@font-face
+  +font(Montserrat, Medium, 500)
+
+@font-face
+  +font(Montserrat, Bold, 700)
 
 +scrollbar( var(--blackPrimary), var(--colorGreenPrimary), 15px)
 
@@ -25,12 +28,16 @@
   --white: #ffffff
   --black: #000000
 
-  --blackPrimary: #1F1F1F
-  --colorGreenPrimary: #D0DF6A
+  --blackPrimary: #0e1013
+  --blackPrimaryBG: #040404
+  --blackPrimaryOLD: #1F1F1F
+  --colorGreenPrimary: #cbe154
+  --colorGreenPrimaryOLD: #D0DF6A
   --colorGreen2: #2DD25A
+  --colorVioletPrimary: #cb53eb
 
   --theme-color: var(--white)
-  --theme-bg: var(--blackPrimary)
+  --theme-bg: var(--blackPrimaryBG)
 
 html
   font-size: 1px
@@ -45,12 +52,12 @@ body
 
   font-family: Montserrat, var(--system-ui)
   font-weight: 400
-  font-size: 20rem
-  line-height: 1.4
+  font-size: 14rem
+  line-height: 120%
   overflow-x: hidden
-
-.font-cursive
-  font-family: cursive
+  background-size: cover
+  background-repeat: no-repeat
+  background-image: url('../assets/images/bg.png')
 
 a, button
   cursor: pointer
@@ -63,7 +70,6 @@ a, button
 button
   border: none
   background-color: transparent
-  letter-spacing: -0.02em
 
 input
   cursor: text
@@ -72,5 +78,11 @@ input
 
 .page-inner
   +row-flex
+
+.wrapper
+  +wrapper()
+
+.wrapper-full
+  +wrapper-full()
 
 /* __base__ */

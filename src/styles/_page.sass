@@ -1,1 +1,37 @@
 
+.page
+    &-body
+        // display: flex
+        // flex-direction: column
+        // justify-content: space-between
+        // min-height: 100vh
+
+        padding-top: 25px
+        +sx-block
+            padding-top: 40px
+    &-section
+        +wrapper()
+    &-title
+        &-h1
+            text-transform: uppercase
+            font-weight: 700
+            font-size: 70px
+            line-height: 120%
+        &_markup
+            font-size: 60px
+            line-height: 83%
+            color: #040404
+            display: flex
+            position: relative
+            background: var(--colorGreenPrimary)
+            z-index: -1
+            transform: rotate(2deg)
+            padding: 17px 50px
+    &-text
+        font-weight: 500
+        font-size: 24px
+        line-height: 150%
+    &_it-green
+        font-style: italic
+        font-weight: 700
+        color: var(--colorGreenPrimary)

@@ -3,7 +3,9 @@ import React, { FC } from "react";
 // import { ReactSVG } from 'react-svg';
 // import { useStaticQuery, graphql, Link, navigate } from "gatsby";
 
-const Footer: FC = () => {
+import "./Timer.sass";
+
+const Timer: FC = () => {
   //   const {
   //     mainSlogan
   //   } = useStaticQuery(graphql`
@@ -14,12 +16,12 @@ const Footer: FC = () => {
   //       }
   //     }`);
   return (
-    <footer className="footer">
+    <section className="timer">
       <div className="wrapper">
-        <div className="footer-inner"></div>
+        <div className="timer-inner">01:29</div>
       </div>
-    </footer>
+    </section>
   );
 };
 
-export { Footer };
+export { Timer };

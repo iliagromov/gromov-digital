@@ -4,6 +4,10 @@ import { Logo } from "../../../compontens/common/Logo";
 // import { ReactSVG } from 'react-svg';
 // import { useStaticQuery, graphql, Link, navigate } from "gatsby";
 
+import "./Header.sass";
+import { Button } from "../../../compontens/ui/Button/Button";
+import { Cheap } from "../../../compontens/ui/Cheap/Cheap";
+
 const Header: FC = () => {
   //   const {
   //     mainSlogan
@@ -15,10 +19,17 @@ const Header: FC = () => {
   //       }
   //     }`);
   return (
-    <header className="header ">
+    <header className="header">
       <div className="wrapper">
-        <div className="page-inner">
-          <Logo />
+        <div className="page-inner header-inner">
+          <div className="header__logo">
+            <Logo />
+          </div>
+
+          <div className="header__action">
+            <Cheap isIndicator>Готов к 2 новым проектам</Cheap>
+            <Button>Написать</Button>
+          </div>
         </div>
       </div>
     </header>
