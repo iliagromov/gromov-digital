@@ -15,25 +15,28 @@
 @font-face
   +font(Montserrat, Regular, 400)
 
-// +scrollbar(#101010, $color_scrollbar-thumb)
++scrollbar( var(--blackPrimary), var(--colorGreenPrimary), 15px)
 
 *
   box-sizing: border-box
 
 :root
   --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+  --white: #ffffff
+  --black: #000000
+
+  --blackPrimary: #1F1F1F
+  --colorGreenPrimary: #D0DF6A
+  --colorGreen2: #2DD25A
+
+  --theme-color: var(--white)
+  --theme-bg: var(--blackPrimary)
 
 html
   font-size: 1px
-  scrollbar-color: $color_green #fff
+  scrollbar-color: var(--colorGreenPrimary) var(--blackPrimary)
   scrollbar-width: auto
   scroll-behavior: smooth
-
-  --theme-color: #101010
-  --theme-bg: #F2F2F2
-
-  --bg-light: #F2F2F2
-  --dark-bg: #101010
 
 body
 
