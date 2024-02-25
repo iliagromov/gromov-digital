@@ -1,0 +1,6 @@
+@mixin font($font, $fontName, $weight: normal ) 
+    font-family: $font
+    src: local("#{$font} #{$fontName}"), url("../assets/fonts/#{$font}/#{$font}-#{$fontName}.woff") format("woff")
+    font-weight: #{$weight}
+    font-style: normal
+    

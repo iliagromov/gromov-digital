@@ -1,0 +1,140 @@
++reset()
+/* __reset__ */
+/* __base__ */
+//   font-family: var(--font-family,CircularSpTitle,CircularSpTitle-Tall,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,))
+// --fallback-fonts: Helvetica Neue,helvetica,arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic;
+// scrollbar-color: hsla(0,0%,100%,.3) transparent;
+// font-family: var(--font-family,CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,));
+// font-size: 0.875rem;
+
+// $fallback-fonts: Helvetica Neue,helvetica,arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic;
+
+// .wrapper
+//   +wrapper()
+
+@font-face
+  +font(GolosText, Regular, 400)
+
+@font-face
+  +font(GolosText, Medium, 500)
+
+@font-face
+  +font(GolosText, Medium, 600)
+
+@font-face
+  +font(GolosText, Bold, 700)
+
+@font-face
+  +font(GolosText, DemiBold, 800)
+
+@font-face
+  +font(GolosText, Black, 900)
+
+// +scrollbar(#101010, $color_scrollbar-thumb)
+
+*
+  box-sizing: border-box
+:root
+  --toastify-color-success: #1EC55B
+html
+  font-size: 1px
+  scrollbar-color: $color_green #fff
+  scrollbar-width: auto
+  scroll-behavior: smooth
+
+  --theme-color: #101010
+  --theme-bg: #F2F2F2
+
+  --dark-bg: #101010
+  --light-bg: #F2F2F2
+
+  --textNormal: #222222
+  --textTitle: #222222
+  --textLink: blue
+  --hr: hsla(0, 0%, 0%, 0.2)
+  --bg: #F2F2F2
+  --bg-light: #F2F2F2
+  --fg: #222222
+  --green: #1EC55B
+  --green-l: #1CB554
+  --green-d: #189E49
+  --green-c: #169143
+  --black: #101010
+  --error: #FE2149
+  --dark-fg: #FAFAFA
+  --dark-hover: rgba(30, 197, 91, .14)
+  --dark-border: #424245
+  --hub: #1EC55B
+  --connect: #32CCBA
+  --pim: #287EFF
+  --ads: #8233CC
+  --ai: #FA33C6
+  --repricer: #FFAA1B
+  --dropship: #8770FA
+  --hub20: #189e49
+  --connect20: #28a395
+  --pim20: #2065cc
+  --ads20: #6829a3
+  --ai20: #c8299e
+  --repricer20: #cc8816
+  --dropship20: #6c5ac8
+  --hub40: #127637
+  --connect40: #1e7a70
+  --pim40: #184c99
+  --ads40: #4e1f7a
+  --ai40: #961f77
+  --repricer40: #996610
+  --dropship40: #514396
+  --green14: #DFF7E8
+  --dark-green14: #122A1B
+  --dark-green20: #1BA14C
+  --cont-bg: #101010
+  --cont-green: #4CC67F
+  --cont-green-l: #27AE60
+
+  --gray1C: #1C1C1C
+  --grayC9: #C9C9C9
+  --gray9A: #9A9A9A
+  --greenBase: #1EE165
+  --green-bg: #112117
+  --control-colors-surface-primary: #151515
+  --cont-lilac: #A5A1FF
+body
+  font-weight: 400
+  font-size: 20rem
+  line-height: 1.4
+  color: var(--bg-light)
+  background-color: var(--dark-bg)
+  // font-family: Manrope
+  font-family: Raleway
+  overflow-x: hidden
+  // font-family: $fallback-fonts,CircularSpTitle,CircularSpTitle-Tall,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva
+
+  // margin: 0
+
+.font-cursive
+  font-family: cursive
+
+a, button
+  cursor: pointer
+  color: inherit
+  text-decoration: none
+
+  &:focus
+    outline: none
+
+button
+  border: none
+  background-color: transparent
+  letter-spacing: -0.02em
+
+input
+  cursor: text
+  &:focus
+    outline: none
+
+.page-inner
+  +row-flex
+
+  //     padding-right: 10rem
+/* __base__ */
