@@ -11,17 +11,4 @@
 // import 'antd/lib/notification/style'
 // import "antd/lib/checkbox/style";
 
-// @use "@material/floating-label/mdc-floating-label";
-// @use "@material/line-ripple/mdc-line-ripple";
-// @use "@material/notched-outline/mdc-notched-outline";
-// @use "@material/textfield";
-
-// @include textfield.core-styles;
-
-// import "./main.min.css";
-// import "./toastinette.min.css";
-// import "./pim-6f02f1fa.css";
-// import "./svg-inject-dac03c87.css";
-// import "./svg-inject-015965b5.css";
-import "./shared.css";
 import "./main.sass";

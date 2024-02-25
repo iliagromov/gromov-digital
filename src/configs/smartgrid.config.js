@@ -1,7 +1,7 @@
 const options = require("./breakPoints.json");
 var smartgrid = require("smart-grid");
 var settings = {
-  outputStyle: "sass" /* less || scss || sass || styl */,
+  outputStyle: "scss" /* less || scss || sass || styl */,
   columns: 12 /* number of grid columns */,
   offset: "20px" /* gutter width px || % || rem */,
   mobileFirst: true /* 360px mobileFirst ? 'min-width' : 'max-width' */,

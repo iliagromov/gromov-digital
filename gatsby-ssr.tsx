@@ -1,11 +1,15 @@
-import * as React from "react";
-import type { GatsbySSR } from "gatsby";
+import { WrapWithProvidert } from "./wrap-with-provider";
+export const wrapRootElement = WrapWithProvidert;
 
-export const wrapPageElement: GatsbySSR["wrapPageElement"] = ({ element }) => {
-  return (
-    <div>
-      <h1>Hello World</h1>
-      {element}
-    </div>
-  );
-};
+// export const onRenderBody = ({ setHeadComponents }) => {
+//   setHeadComponents([
+//     <link
+//       rel="preload"
+//       href="/fonts/Montserrat/Montserrat-Regular.ttf"
+//       as="font"
+//       type="font/truetype"
+//       crossOrigin="anonymous"
+//       key="interFont"
+//     />,
+//   ]);
+// };

@@ -1,13 +1,10 @@
-import * as React from "react";
-import type { GatsbyBrowser } from "gatsby";
+/**
+ * Implement Gatsby's Browser APIs in this file.
+ *
+ * See: https://www.gatsbyjs.org/docs/browser-apis/
+ */
 
-export const wrapPageElement: GatsbyBrowser["wrapPageElement"] = ({
-  element,
-}) => {
-  return (
-    <div>
-      <h1>Hello World</h1>
-      {element}
-    </div>
-  );
-};
+import "./src/styles/index";
+
+import { WrapWithProvidert } from "./wrap-with-provider";
+export const wrapRootElement = WrapWithProvidert;

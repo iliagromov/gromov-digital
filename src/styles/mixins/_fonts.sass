@@ -1,0 +1,5 @@
+@mixin font($font, $fontName, $weight: normal )
+    font-family: $font
+    src: local("#{$font} #{$fontName}"), url("../assets/fonts/#{$font}/#{$font}-#{$fontName}.ttf") format('truetype'), // Safari, Android, iOS Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5
+    font-weight: #{$weight}
+    font-style: normal
