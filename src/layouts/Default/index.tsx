@@ -64,7 +64,7 @@ const Layout: FC<LayoutProps> = ({
           <script src="https://qtickets.ru/js/openapi" />
         </Helmet> */}
 
-        <Header pageType={pageType} />
+        {/* <Header pageType={pageType} /> */}
         <main className={cn("page", [classNames])}>{children}</main>
         <Footer />
       </div>

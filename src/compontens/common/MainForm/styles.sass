@@ -1,0 +1,44 @@
+@import '../../../styles/_imports'
+
+$gutter: 145px
+.form
+    border: 1px solid var(--colorGreenPrimary)
+    border-radius: 50px
+    &Steps
+        padding: 3px 39px
+
+.formStepsPoints
+    display: flex
+    padding: 20px 0
+
+.formStepPointLi
+    display: flex
+    align-items: center
+    color: var(--colorGreenDisabled)
+    &.isActive
+        color: var(--colorGreenPrimary)
+        .formStepPoint
+            border-color: currentColor
+        .formStepPointLine
+            background-color: currentColor
+
+    &.isError
+        border-color: var(--colorRed)
+
+.formStepPoint
+    position: relative
+    cursor: pointer
+    content: ''
+    display: flex
+    width: 27px
+    height: 27px
+    border-radius: 1px
+    border: 5px solid currentColor
+
+.formStepPointLine
+
+    // transform: translateY(-55%)
+    // margin-top: 5px
+    width: $gutter
+    height: 6px
+    background-color: currentColor
