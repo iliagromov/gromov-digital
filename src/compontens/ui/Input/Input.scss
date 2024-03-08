@@ -1,0 +1,104 @@
+@import "../../../styles/imports";
+
+.input-field {
+  position: relative;
+  font-weight: 500;
+  font-size: 20px;
+  color: #747474;
+
+  &__box {
+    position: relative;
+  }
+
+  &__control {
+    height: 69px;
+    border-radius: 10px;
+    padding: 0 14px;
+    border-width: 2px;
+    border-color: #dadada;
+    font-size: 1em;
+    font-feature-settings: normal;
+    font-variant: normal;
+    text-transform: capitalize;
+
+    &:hover {
+      border-color: #dadada;
+    }
+
+    &:focus {
+      border-color: #747474;
+      box-shadow: none;
+    }
+
+    &--has-error {
+      border-color: var(--colorRed);
+      box-shadow: none;
+    }
+
+    &--has-label {
+      height: 69px;
+    }
+
+    &--label-offset {
+      padding-top: 16px;
+    }
+
+    &--has-submit {
+      padding-right: 62px;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    top: 0;
+    left: 14px;
+    line-height: 1;
+    font-size: 1em;
+
+    transform-origin: 0% 100%;
+    transform: translateY(23px);
+    transition: transform 0.2s ease-out, color 0.2s ease-out;
+    color: rgba(#747474, 0.3);
+
+    &--active {
+      transform: translateY(12px) scale(0.8);
+      transform-origin: 0 0;
+    }
+
+    .input-field__control:focus ~ & {
+      color: #747474;
+    }
+  }
+
+  &__submitButton {
+    position: absolute;
+    right: 12px;
+
+    &.ant-btn-custom.ant-btn {
+      padding: 0;
+      background: none;
+
+      &:disabled {
+        color: var(--colorGreenDisabled);
+      }
+    }
+  }
+
+  &__hint {
+    position: absolute;
+    bottom: -15px;
+    display: block;
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 10px;
+
+    &--error {
+      color: var(--colorRed);
+    }
+
+    &--success {
+      color: var(--colorGreenPrimary);
+    }
+  }
+}

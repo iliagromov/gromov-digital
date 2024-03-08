@@ -6,7 +6,7 @@
  */
 // import 'antd/es/menu/style'
 // import "antd/es/collapse/style";
-// import "antd/es/input/style";
+import "antd/es/input/style";
 // import 'antd/es/popover/style'
 // import 'antd/lib/notification/style'
 // import "antd/lib/checkbox/style";

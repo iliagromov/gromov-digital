@@ -7,6 +7,7 @@ import "./Button.sass";
 
 type ButtonProps = {
   children?: string;
+  disabled?: boolean;
   handleClick?: () => void;
 };
 
